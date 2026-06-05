@@ -1,15 +1,12 @@
-#find LCM of two numbers
-num1=int(input("enter first number"))
-num2=int(input("enter a second number"))
-if num1>num2:
-    greater=num1
-else:
-    greater=num2
-    while True:
-        if greater%num1==0 and greater%num2==0:
-            lcm=greater
+
+#check the number whether it is prime or not
+num = int(input("enter a number "))
+if num >1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            print(num, " is not a prime number")
             break
-        greater+=1
-    print("LCM of",num1,"and",num2,"is,",lcm)
+        else:
+            print(num, " is a prime number")
 
         

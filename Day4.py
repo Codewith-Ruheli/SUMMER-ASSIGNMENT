@@ -1,17 +1,8 @@
 
-#to check strong number
+#to print factor of a number
 n=int(input("enter a number :"))
-temp=n
-sum=0
-while temp>0:
-    digit=temp%10
-    fact=1
-    for i in range(1,digit+1):
-        fact=fact*i
-        sum=sum+fact
-        temp=temp//10
-        if sum==n:
-            print("strongnumber :")
-        else:
-            print("not a strong number :")
-            
+for i in range(1,n+1):
+    if n%i==0:
+        print(i)
+
+

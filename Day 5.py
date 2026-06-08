@@ -1,8 +1,7 @@
 
-#convert decimal to binary
-n=int(input("Enter a decimal number: "))
-binary=""
-while n>0:
-    binary=str(n%2)+binary
-    n=n//2  
-print("Binary =",binary)
+#convert binary to decimal
+n = input("Enter a binary number: ")
+decimal = 0
+for digit in n:
+    decimal = decimal * 2 + int(digit)
+print("decimal number =", decimal)

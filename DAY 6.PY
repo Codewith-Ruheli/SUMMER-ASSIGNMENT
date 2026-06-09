@@ -1,10 +1,8 @@
 
-#recursive fibonacci
-def fib(n):
-    if n<=1:
-        return n
-    return fib(n-1)+fib(n-2)
-n= int(input("enter n:"))
-print("fibonacci term =",fib(n))
-
-    
+#recursive sum of digit
+def sum_digits(n):
+    if n == 0:
+        return 0
+    return n%10+ sum_digits(n//10)
+num=int(input("enter a number"))
+print("sum of digit=",sum_digits(num))
